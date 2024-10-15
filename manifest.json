@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.1.0",
-	"id": "Tumbler.betterglass",
+	"id": "Tumbler.everclear",
 	"name": "Better Glass panel",
 	"description": "Stops hiding the intel widget on the glass panel after selecting a prestige objective.",
 	"authors": ["Tumbler"],
