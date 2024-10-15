@@ -1,0 +1,240 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"91c2ec5d647f342b",
+				{
+					"AddEventConnection": ["HasData", "SetVisible", "cafed24b08d45799"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65cb136f0e2b27e7",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aChildren",
+						[
+							{
+								"AddItemAfter": ["aa27f43c24b30b1e", "cafe94228431d977"]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe94228431d977",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "UiContainer 1 plus",
+					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/uicontainer.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/uicontainer.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eAlignment": {
+							"type": "ZUIControlEntity.EAlignment",
+							"value": "TopRight"
+						},
+						"m_vScaleManual": {
+							"type": "SVector2",
+							"value": { "x": 1.5, "y": 1.5 }
+						},
+						"m_vPositionOffset": {
+							"type": "SVector3",
+							"value": { "x": 0.0, "y": 78.0, "z": 0.0 }
+						},
+						"m_vAlignment": {
+							"type": "SVector2",
+							"value": { "x": 1.0, "y": 0.0 }
+						},
+						"m_vLayoutSize": {
+							"type": "SVector2",
+							"value": { "x": 652.0, "y": 200.0 }
+						},
+						"m_bIsVisible": { "type": "bool", "value": false },
+						"m_aChildren": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["f54506f299e428c0", "88c8b5d779fd5c4d", "14689339e55dab42"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed24b08d45799",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "VisibillityController 3 Plus",
+					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_pTargetControl": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe94228431d977"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "df9a3f1007044e25",
+				"name": "Notes",
+				"text": "These are image boxes of prestige icons"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "c7506ae8336b6973",
+				"name": "Notes",
+				"text": "These are image boxes of prestige icons"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "4d7f94d0a0f56f3d",
+				"name": "Notes",
+				"text": "These textboxes hold the Titles for prestiges and are held in \"Columns\". Their data come from info data provider entities."
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "0a0fcbf52216ec60",
+				"name": "Notes",
+				"text": "These textboxes hold the Titles or text descriptions for prestiges and are held in \"Columns\". Their data come from infodataprovider entities type of left, right or middle"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "5ca10045ff3c6976",
+				"name": "Notes",
+				"text": "These textboxes hold the Titles or text descriptions for prestiges and are held in \"Columns\". Their data come from infodataprovider entities type of left, right or middle"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "95a8da6c96c74371",
+				"name": "Notes",
+				"text": "These textboxes hold the Titles or text descriptions for prestiges and are held in \"Columns\". Their data come from infodataprovider entities type of left, right or middle"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "a339ab9548c7b323",
+				"name": "Notes",
+				"text": "These textboxes hold the Titles or text descriptions for prestiges and are held in \"Columns\". Their data come from infodataprovider entities type of left, right or middle"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "4afc73e439ab2d39",
+				"name": "Notes",
+				"text": "These are image boxes for prestige icons from the same dataproviders that set values to the textboxes"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "9a0314dd55ee12e3",
+				"name": "Notes",
+				"text": "This is the only textbox that doesnt hold text or title set from any dataproviders and is the only of two children together with Basic line 2 called straight into UIcontainer 5. Children are given parameters by their parents"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "082753a8b0343e37",
+				"name": "Notes",
+				"text": "Aesthetic video being played. Not being held in containers so can freely be placed anywhere independently of other column like structures"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "7eca6ee647db013d",
+				"name": "Notes",
+				"text": "Flips or mirrors the glass plane depending on where you stand in relation to the glass panel. Uses a reference point to decide when to flip the panel info"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "dd6e6301a51e224f",
+				"name": "Notes",
+				"text": "The reference being used in the previous entity. Flips the panel 180 degrees and has a copy of the glass panel being used to store everything on as a parent. No clue why in logical step by step thinking"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "5cb7aeaf07f5ed0e",
+				"name": "Notes",
+				"text": "A column that holds an imagebox (icon), a title and description for prestiges for on the left side. Is a child of UIcontainer4, meaning the container will display it probably"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "bcc21ed9b732eb6a",
+				"name": "Notes",
+				"text": "A column that holds an imagebox (icon), a title and description for prestiges for on the right side. Is a child of UIcontainer4, meaning the container will display it probably"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "aa27f43c24b30b1e",
+				"name": "Notes",
+				"text": "A column that holds an imagebox (icon), a title and description for prestiges for in the middle section. Is a child of UIcontainer4, meaning the container will display it probably"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "623c6323243bcfa8",
+				"name": "Notes",
+				"text": "Container of various information packages held, like columns, video boxes"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "f31dbe382cfaa93b",
+				"name": "Notes",
+				"text": "Container of various information packages held, like columns, video boxes. this the container I need always displayed and stop being hidden when a prestige is selected"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "b96c26aa4590d7a3",
+				"name": "Notes",
+				"text": "This the child of RtT wall version holding everything. Gives off properties to UIcontainers 1 and 4"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "2073cbec81187072",
+				"name": "Notes",
+				"text": "This is the container responsible for holding all the prestige objective. Might have to see how those dataproviders for the prestiges work to make the intel widget work"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "6ca2ddd8c8364699",
+				"name": "Notes",
+				"text": "When a prestigeobjective is selected it hides the wall but takes the uicontainer 01 with it. Need to isolate container 01 or copy it"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "88c8b5d779fd5c4d",
+				"name": "Notes",
+				"text": "I could place this inside the control entity"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "65cb136f0e2b27e7",
+				"name": "Notes",
+				"text": "This holds everything, all the time. \n\t\t\t"
+			}
+		}
+	],
+	"patchVersion": 6
+}
