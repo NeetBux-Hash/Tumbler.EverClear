@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"id": "Tumbler.betterglass",
 	"name": "Better Glass panel",
-	"description": "Stops hiding the intel widget on the glass panel after selecting a prestige objective in mission control.",
+	"description": "Stops hiding the intel widget on the glass panel after selecting a prestige objective.",
 	"authors": ["Tumbler"],
 	"frameworkVersion": "2.0.0",
 	"contentFolders": ["content"]
