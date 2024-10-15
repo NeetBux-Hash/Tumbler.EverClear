@@ -1,0 +1,4 @@
+Idea: Delete the removal of location info when selecting a prestige objective
+Working inside entity 2753affd62ff0288
+Keep UI container 01 from hiding 
+Could add an smart glasses option that adds them to game ui. Icons are used in mini map
