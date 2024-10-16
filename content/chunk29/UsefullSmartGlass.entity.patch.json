@@ -3,6 +3,304 @@
 	"tbluHash": "005BA5CA6AC00627",
 	"patch": [
 		{
+			"SubEntityOperation": [
+				"65cb136f0e2b27e7",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aChildren",
+						[
+							{
+								"AddItemAfter": [
+									"082753a8b0343e37",
+									"cafe660ee4460c2b"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"Hide",
+						"cafe927457550fcd"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"Hide",
+						"cafea52042408ce4"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"Show",
+						"cafe927457550fcd"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"Show",
+						"cafea52042408ce4"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe094c1f8cad81",
+				{
+					"parent": "f31dbe382cfaa93b",
+					"name": "UI plus 1",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe660ee4460c2b",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "UI container plus after prestige",
+					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/uicontainer.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/uicontainer.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eAlignment": {
+							"type": "ZUIControlEntity.EAlignment",
+							"value": "TopRight"
+						},
+						"m_vScaleManual": {
+							"type": "SVector2",
+							"value": { "x": 1.5, "y": 1.5 }
+						},
+						"m_vPositionOffset": {
+							"type": "SVector3",
+							"value": { "x": 0.0, "y": 78.0, "z": 0.0 }
+						},
+						"m_vAlignment": {
+							"type": "SVector2",
+							"value": { "x": 1.05, "y": 0.07 }
+						},
+						"m_vLayoutSize": {
+							"type": "SVector2",
+							"value": { "x": 652.0, "y": 200.0 }
+						},
+						"m_bIsVisible": { "type": "bool", "value": false },
+						"m_aChildren": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafe36d06d6ffd81",
+								"cafebd65d5f8d394",
+								"cafe5c014d86d1ac"
+							],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe927457550fcd",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "Vis controller plus",
+					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_fFadeTime": {
+							"type": "float32",
+							"value": 0.35
+						},
+						"m_pTargetControl": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe660ee4460c2b"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebd65d5f8d394",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "Hud2",
+					"factory": "[assembly:/ui/controls/hud.swf?/hud.evergreen.locationintelwidget.uic].pc_entitytype",
+					"blueprint": "[assembly:/ui/controls/hud.swf?/hud.evergreen.locationintelwidget.uic].pc_entityblueprint",
+					"properties": {
+						"m_pMovieResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/ui/controls/hud.swf].pc_swf",
+								"flag": "5F"
+							}
+						},
+						"m_sClassName": {
+							"type": "ZString",
+							"value": "hud.evergreen.LocationIntelWidget"
+						},
+						"m_eAlignment": {
+							"type": "ZUIControlEntity.EAlignment",
+							"value": "TopCenter"
+						},
+						"m_vAlignment": {
+							"type": "SVector2",
+							"value": { "x": 0.5, "y": 1.0 }
+						},
+						"m_vPositionOffset": {
+							"type": "SVector3",
+							"value": { "x": 0.0, "y": 220.0, "z": 0.0 }
+						},
+						"m_vLayoutSize": {
+							"type": "SVector2",
+							"value": { "x": 690.0, "y": 150.0 }
+						},
+						"m_pDataProvider": {
+							"type": "SEntityTemplateReference",
+							"value": "91c2ec5d647f342b"
+						},
+						"3393788306": {
+							"type": "float32",
+							"value": 100.0
+						},
+						"m_vScaleManual": {
+							"type": "SVector2",
+							"value": {
+								"x": 0.949999988079071,
+								"y": 0.949999988079071
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe36d06d6ffd81",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "BGblack 03",
+					"factory": "[assembly:/ui/controls/basic.swf?/basic.quad.uic].pc_entitytype",
+					"blueprint": "[assembly:/ui/controls/basic.swf?/basic.quad.uic].pc_entityblueprint",
+					"properties": {
+						"m_pMovieResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/ui/controls/basic.swf].pc_swf",
+								"flag": "5F"
+							}
+						},
+						"m_sClassName": {
+							"type": "ZString",
+							"value": "basic.Quad"
+						},
+						"Color": { "type": "ZString", "value": "000000" },
+						"Alpha": { "type": "int32", "value": 100 },
+						"m_eAlignment": {
+							"type": "ZUIControlEntity.EAlignment",
+							"value": "StretchVerticalRight"
+						},
+						"m_vAlignment": {
+							"type": "SVector2",
+							"value": { "x": 1.0, "y": 0.0 }
+						},
+						"m_vLayoutSize": {
+							"type": "SVector2",
+							"value": { "x": 671.0, "y": -50.0 }
+						},
+						"m_bIsVisible": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5c014d86d1ac",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "Vm mask 3",
+					"factory": "[assembly:/ui/controls/basic.swf?/basic.quad.uic].pc_entitytype",
+					"blueprint": "[assembly:/ui/controls/basic.swf?/basic.quad.uic].pc_entityblueprint",
+					"properties": {
+						"m_pMovieResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/ui/controls/basic.swf].pc_swf",
+								"flag": "5F"
+							}
+						},
+						"m_sClassName": {
+							"type": "ZString",
+							"value": "basic.Quad"
+						},
+						"Color": { "type": "ZString", "value": "000000" },
+						"Alpha": { "type": "int32", "value": 100 },
+						"m_eAlignment": {
+							"type": "ZUIControlEntity.EAlignment",
+							"value": "TopLeft"
+						},
+						"m_vAlignment": {
+							"type": "SVector2",
+							"value": { "x": 1.0, "y": 0.0 }
+						},
+						"m_vLayoutSize": {
+							"type": "SVector2",
+							"value": { "x": 107.0, "y": 126.0 }
+						},
+						"m_vScaleManual": {
+							"type": "SVector2",
+							"value": { "x": 1.0, "y": 1.11 }
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea52042408ce4",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "Vis 2 controller plus plus ",
+					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_fFadeTime": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_pTargetControl": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe36d06d6ffd81"
+						}
+					}
+				}
+			]
+		},
+		{
 			"AddComment": {
 				"parent": "df9a3f1007044e25",
 				"name": "Notes",
@@ -63,13 +361,6 @@
 				"parent": "9a0314dd55ee12e3",
 				"name": "Notes",
 				"text": "This is the only textbox that doesnt hold text or title set from any dataproviders and is the only of two children together with Basic line 2 called straight into UIcontainer 5. Children are given parameters by their parents"
-			}
-		},
-		{
-			"AddComment": {
-				"parent": "082753a8b0343e37",
-				"name": "Notes",
-				"text": "Aesthetic video being played. Not being held in containers so can freely be placed anywhere independently of other column like structures"
 			}
 		},
 		{
@@ -151,9 +442,51 @@
 		},
 		{
 			"AddComment": {
+				"parent": "2753affd62ff0288",
+				"name": "Notes",
+				"text": "copying entire Table A just for uicontainer 01"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "bde02b37e2b5fc6e",
+				"name": "Notes",
+				"text": "This is the crimewall table"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "082753a8b0343e37",
+				"name": "Notes",
+				"text": "Aesthetic video being played. Not being held in containers so can freely be placed anywhere independently of other column like structures.\nA video box thats constantly being played in the background and fully displayed when after prestige is selected. REmoving this gets rid of that. RtT might be it. This needs to go behiind custom uicontainer. "
+			}
+		},
+		{
+			"AddComment": {
 				"parent": "65cb136f0e2b27e7",
 				"name": "Notes",
-				"text": "This holds everything, all the time. \n\t\t\t"
+				"text": "This holds everything, all the time. \nTemp videobox removal testing valuebool swap\n\t\t\t"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "91c2ec5d647f342b",
+				"name": "Notes",
+				"text": "Some kind of bool event has to happen here going out with eventdata"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe660ee4460c2b",
+				"name": "Notes",
+				"text": "Offset Y original 78.0\nY aligmnetn increased 0.07"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe5c014d86d1ac",
+				"name": "Notes",
+				"text": "Increase Y alignment as uicont plus = go negative 0.07"
 			}
 		}
 	],
