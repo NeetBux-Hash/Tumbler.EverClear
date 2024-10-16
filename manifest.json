@@ -1,10 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"id": "Tumbler.everclear",
 	"name": "Advanced Glass panel",
 	"description": "Stops hiding the intel widget on the glass panel after selecting a prestige objective.",
 	"authors": ["Tumbler"],
-	"frameworkVersion": "2.0.0",
-	"contentFolders": ["content"]
+	"frameworkVersion": "2.33.20",
+	"contentFolders": ["content"],
+	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.EverClear/releases/latest/download/updates.json"
 }
