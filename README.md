@@ -6,4 +6,4 @@ Stops hiding the intel widget on the glass panel after selecting a prestige obje
 
 ---
 
-`Tumbler.everclear` v0.2.0, by Tumbler. This README was automatically generated from the mod's manifest.
+`Tumbler.everclear` v0.2.1, by Tumbler. This README was automatically generated from the mod's manifest.
