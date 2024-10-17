@@ -10,7 +10,10 @@
 						"m_aChildren",
 						[
 							{
-								"AddItemAfter": ["082753a8b0343e37", "cafe660ee4460c2b"]
+								"AddItemAfter": [
+									"082753a8b0343e37",
+									"cafe660ee4460c2b"
+								]
 							}
 						]
 					]
@@ -21,7 +24,11 @@
 			"SubEntityOperation": [
 				"d21033dbd6410a57",
 				{
-					"AddEventConnection": ["OnTrue", "Hide", "cafe927457550fcd"]
+					"AddEventConnection": [
+						"OnTrue",
+						"Hide",
+						"cafe927457550fcd"
+					]
 				}
 			]
 		},
@@ -29,7 +36,11 @@
 			"SubEntityOperation": [
 				"d21033dbd6410a57",
 				{
-					"AddEventConnection": ["OnTrue", "Hide", "cafea52042408ce4"]
+					"AddEventConnection": [
+						"OnTrue",
+						"Hide",
+						"cafea52042408ce4"
+					]
 				}
 			]
 		},
@@ -37,7 +48,11 @@
 			"SubEntityOperation": [
 				"d21033dbd6410a57",
 				{
-					"AddEventConnection": ["OnFalse", "Show", "cafe927457550fcd"]
+					"AddEventConnection": [
+						"OnTrue",
+						"Hide",
+						"cafea1573fb90f5a"
+					]
 				}
 			]
 		},
@@ -45,7 +60,35 @@
 			"SubEntityOperation": [
 				"d21033dbd6410a57",
 				{
-					"AddEventConnection": ["OnFalse", "Show", "cafea52042408ce4"]
+					"AddEventConnection": [
+						"OnFalse",
+						"Show",
+						"cafe927457550fcd"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"Show",
+						"cafea52042408ce4"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d21033dbd6410a57",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"Show",
+						"cafea1573fb90f5a"
+					]
 				}
 			]
 		},
@@ -92,7 +135,11 @@
 						"m_bIsVisible": { "type": "bool", "value": false },
 						"m_aChildren": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe36d06d6ffd81", "cafebd65d5f8d394", "cafe5c014d86d1ac"],
+							"value": [
+								"cafe36d06d6ffd81",
+								"cafebd65d5f8d394",
+								"cafe5c014d86d1ac"
+							],
 							"postInit": true
 						}
 					}
@@ -209,7 +256,7 @@
 							"type": "SVector2",
 							"value": { "x": 671.0, "y": -50.0 }
 						},
-						"m_bIsVisible": { "type": "bool", "value": false }
+						"m_bIsVisible": { "type": "bool", "value": true }
 					}
 				}
 			]
@@ -251,7 +298,8 @@
 						"m_vScaleManual": {
 							"type": "SVector2",
 							"value": { "x": 1.0, "y": 1.11 }
-						}
+						},
+						"m_bIsVisible": { "type": "bool", "value": true }
 					}
 				}
 			]
@@ -272,6 +320,27 @@
 						"m_pTargetControl": {
 							"type": "SEntityTemplateReference",
 							"value": "cafe36d06d6ffd81"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea1573fb90f5a",
+				{
+					"parent": "2753affd62ff0288",
+					"name": "vis mask 3 controller  plus ",
+					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_fFadeTime": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_pTargetControl": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5c014d86d1ac"
 						}
 					}
 				}
