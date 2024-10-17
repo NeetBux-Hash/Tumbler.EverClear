@@ -4,6 +4,30 @@
 	"patch": [
 		{
 			"SubEntityOperation": [
+				"91c2ec5d647f342b",
+				{
+					"AddEventConnection": [
+						"HasData",
+						"SetVisible",
+						"cafea52042408ce4"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"91c2ec5d647f342b",
+				{
+					"AddEventConnection": [
+						"HasData",
+						"SetVisible",
+						"cafea1573fb90f5a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
 				"65cb136f0e2b27e7",
 				{
 					"PatchArrayPropertyValue": [
